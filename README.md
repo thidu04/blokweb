@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  responsive óf surface plane
+  surface plane
  
 </details>
 
@@ -36,14 +36,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  Apple website https://www.apple.com/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Apple homepagina 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Apple iPhone modellen pagina
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -88,6 +88,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
+
+  Ik zat te twijfelen na mijn breakdownschets waar ik de H1 zou plaatsen omdat mijn site eigenlijk geen h1 heeft. Meestal maak ik de logo een h1, maar apple heeft een appelplaatje en niet een tekst. Dus wil ik de h1 laten verbergen.
+
+  Ik had het opgezocht en er stond dat je het met css visually: hidden kon verbergen.
+
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 

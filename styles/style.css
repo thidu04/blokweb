@@ -2,30 +2,754 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+	box-sizing:border-box;  
+  }
+  
+
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+	  /* startje */
+	  --color-text:#111;
+	  --image-iphonepro-text: white;
+	  --text-positie-content: center;
+	  --color-background:#eee;
+	  --font-style:-apple-system, BlinkMacSystemFont, sans-serif;
+	  --font-size-content: 0.8em;
+	  --links-color: rgb(1,113,227,255)
+  }
+  
+  
+  
+  
+  
+  /****************/
+  /* JOUW STYLING */
+  /****************/
+  
+  /* jouw code */
+  
+  * {
+	  margin: 0;
+	  padding: 0;
+  }
+   
+  
+  .logo{
+	  height: 3em;
+	  padding-left: 1em;
+	  position: absolute;
+  }
+  
+  nav{
+	  position: fixed;
+	  background-color: rgb(239, 236, 236);
+	  width: 100%;
+	  height: 3em;
+	  z-index: 1;
+  }
+   nav ul{
+	  display: flex;
+	  justify-content: flex-end;
+	  list-style: none;
+	  padding-right: 1em;
+	  gap: 2em;
+  
+  }
+  
+  header nav ul li a img{
+	width: 1em;
+	height: auto;
+	  
+  }
+
+  .products-scroller{
+	top: 2em;
+	position: relative;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 25%;
+	
+	overflow-x: auto;
+	overscroll-behavior-inline: contain;
+  }
+
+  .product-element{
+	display: grid;
+	grid-template-rows: min-content;
+	font-family: var(--font-style);
+	padding: 3em;
+  }
+  
+
+  .products-scroller p{
+	text-align: var(--text-positie-content);
+  }
+  
+
+
+ /* https://www.youtube.com/watch?app=desktop&v=3yfswsnD2sw
+ grid template rows helpt zodat de tekst algned staat*/
+
+
+  /* door grid auto flow komt het naast elkaar te staan het is een kolom 
+  geworden lijkt op display flex de with van elke kolom door 20%
+  overflow x zorgt voor horizontaal scrollen*/
+
+
+  h1{
+	  visibility: hidden;
+  }
+  
+  .introtext{
+	  background-color: white;
+	  position: absolute;
+	  top: 3em;
+	  padding: 2em;
+	  font-family: var(--font-style);
+	  text-align: var(--text-positie-content);
+	  font-size: var(--font-size-content);
+  }
+
+  .iphonepro{
+	position: relative;
+	top: 8em;
+	background-color: black;
+	overflow: hidden; 
+  }
+
+  .iphonepro img{
+	  height: 38.1em;
+  }
+
+  .iphonepro h2{
+	position: absolute;
+	top: 1em;
+	left: 3em;
+	color:var(--image-iphonepro-text);
+	font-family: var(--font-style);
+	font-weight: normal;
+	font-size: 2.3em;
+  }
+
+  .iphonepro p{
+	position: absolute;
+	top: 5.5em;
+	left: 4.3em;
+	text-align: var(--text-positie-content);
+	color:var(--image-iphonepro-text);
+	font-family: var(--font-style);
+	font-size: 1.1em;
+  }
+
+  .links1{
+	position: absolute;
+	top: 8.5em;
+	left: 7.5em;
+  }
+  
+  a{
+	text-decoration: none; 
+	font-family: var(--font-style);
+	color: var(--links-color);
+  }
+
+  a:visited { 
+	color: var(--links-color);
+   }
+
+   .iphone15{
+	position: relative;
+   }
+
+  .iphone15 img{
+	width: 100%;
+	aspect-ratio: 2/ 2;
+  }
+
+  .iphone15 h2{
+	position: absolute;
+	top: 1em;
+	left: 3.5em;
+	color: black;
+	font-family: var(--font-style);
+	font-weight: normal;
+	font-size: 2.3em;
+  }
+
+  .iphone15 p{
+	position: absolute;
+	top: 5em;
+	left: 1em;
+	color: black;
+	font-family: var(--font-style);
+	font-size: 1.1em;
+  }
+
+  .links2{
+	position: absolute;
+	top: 8.5em;
+	left: 7.5em;
+  }
+
+  .applewatch{
+	position: relative;
+	width: 100%;
+	height: 60vh;
+	overflow: hidden;
+  }
+  .applewatch img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  .iphones-introtext{
+	background-color: white;
+	position: absolute;
+	padding: 1em;
+	padding-bottom: 2em;
+	font-family: var(--font-style);
+	text-align: var(--text-positie-content);
+	font-size: var(--font-size-content);
 }
 
-
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+.iphonepro-page{
+position: relative;
+	top: 5em;
+	background-color: black;
+	overflow: hidden; 
 }
 
+.iphonepro-page img{
+	height: 38.1em;
+}
+
+.iphonepro-page h2{
+  position: absolute;
+  top: 1.8em;
+  left: 3.2em;
+  color:var(--image-iphonepro-text);
+  font-family: var(--font-style);
+  font-weight: normal;
+  font-size: 2.5em;
+}
+
+.iphonepro-page a{
+	position: absolute;
+	top: 14em;
+	left: 8.5em;
+  }
+
+  .iphonepro-page p {
+	position: relative;
+	font-family: var(--font-style);
+	color:var(--image-iphonepro-text);
+	z-index: 1;
+  }
+  
+  .iphonepro-page button {
+	position:absolute;
+	font-size: 1em;
+	font-family: var(--font-style);
+	color: WHITE;
+	background-color: var(--links-color);
+	left: 9.8em;
+	top: 11em;
+	padding: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-radius: 2em;
+  }
+
+.iphonepro-page p:first-of-type {
+	font-size: 0.7em;
+     color: rgb(245,99,0,255);
+	 left: 16em;
+	 top: 2em;
+  }
+  
+  .iphonepro-page p:nth-child(2) {
+	font-size: 1.3em;
+	color:rgb(189,183,175,255);
+	left: 6.8em;
+	top: 1.2em;
+  }
+  
+  .iphonepro-page p:last-of-type{
+	top: 6.2em;
+	left: 9.3em;
+  }
+
+  .iphone15-page{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+  }
+  
+  .iphone15-page img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	
+  }
+
+  .iphone15-page h2{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 3em;
+	left: 3.5em;
+	color: black;
+	font-family: var(--font-style);
+	font-weight: normal;
+	font-size: 1em;
+	z-index: 1;
+  }
+
+  .iphone15-page p{
+	position: absolute;
+	top: 5em;
+	left: 1em;
+	color: black;
+	font-family: var(--font-style);
+	font-size: 1.1em;
+	z-index: 1;
+  }
+
+  .iphone15-page button{
+	z-index: 1;
+  }
+
+  .iphone15-page a{
+	z-index: 1;
+  }
+ /**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+	box-sizing:border-box;  
+  }
+  
+
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+	  /* startje */
+	  --color-text:#111;
+	  --image-iphonepro-text: white;
+	  --text-positie-content: center;
+	  --color-background:#eee;
+	  --font-style:-apple-system, BlinkMacSystemFont, sans-serif;
+	  --font-size-content: 0.8em;
+	  --links-color: rgb(1,113,227,255)
+  }
+  
+  
+  
+  
+  
+  /****************/
+  /* JOUW STYLING */
+  /****************/
+  
+  /* jouw code */
+  
+  * {
+	  margin: 0;
+	  padding: 0;
+  }
+   
+  
+  .logo{
+	  height: 3em;
+	  padding-left: 1em;
+	  position: absolute;
+  }
+  
+  nav{
+	  position: fixed;
+	  background-color: rgb(239, 236, 236);
+	  width: 100%;
+	  height: 3em;
+	  z-index: 1;
+  }
+   nav ul{
+	  display: flex;
+	  justify-content: flex-end;
+	  list-style: none;
+	  padding-right: 1em;
+	  gap: 2em;
+  
+  }
+  
+  header nav ul li a img{
+	width: 1em;
+	height: auto;
+	  
+  }
+
+  .products-scroller{
+	top: 2em;
+	position: relative;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 25%;
+	
+	overflow-x: auto;
+	overscroll-behavior-inline: contain;
+  }
+
+  .product-element{
+	display: grid;
+	grid-template-rows: min-content;
+	font-family: var(--font-style);
+	padding: 3em;
+  }
+  
+
+  .products-scroller p{
+	text-align: var(--text-positie-content);
+  }
+  
 
 
+ /* https://www.youtube.com/watch?app=desktop&v=3yfswsnD2sw
+ grid template rows helpt zodat de tekst algned staat*/
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
+  /* door grid auto flow komt het naast elkaar te staan het is een kolom 
+  geworden lijkt op display flex de with van elke kolom door 20%
+  overflow x zorgt voor horizontaal scrollen*/
 
-/* jouw code */
 
+  h1{
+	  visibility: hidden;
+  }
+  
+  .introtext{
+	  background-color: white;
+	  position: absolute;
+	  top: 3em;
+	  padding: 2em;
+	  font-family: var(--font-style);
+	  text-align: var(--text-positie-content);
+	  font-size: var(--font-size-content);
+  }
+
+  .iphonepro{
+	position: relative;
+	top: 8em;
+	background-color: black;
+	overflow: hidden; 
+  }
+
+  .iphonepro img{
+	  height: 38.1em;
+  }
+
+  .iphonepro h2{
+	position: absolute;
+	top: 1em;
+	left: 3em;
+	color:var(--image-iphonepro-text);
+	font-family: var(--font-style);
+	font-weight: normal;
+	font-size: 2.3em;
+  }
+
+  .iphonepro p{
+	position: absolute;
+	top: 5.5em;
+	left: 4.3em;
+	text-align: var(--text-positie-content);
+	color:var(--image-iphonepro-text);
+	font-family: var(--font-style);
+	font-size: 1.1em;
+  }
+
+  .links1{
+	position: absolute;
+	top: 8.5em;
+	left: 7.5em;
+  }
+  
+  a{
+	text-decoration: none; 
+	font-family: var(--font-style);
+	color: var(--links-color);
+  }
+
+  a:visited { 
+	color: var(--links-color);
+   }
+
+   .iphone15{
+	position: relative;
+   }
+
+  .iphone15 img{
+	width: 100%;
+	aspect-ratio: 2/ 2;
+  }
+
+  .iphone15 h2{
+	position: absolute;
+	top: 1em;
+	left: 3.5em;
+	color: black;
+	font-family: var(--font-style);
+	font-weight: normal;
+	font-size: 2.3em;
+  }
+
+  .iphone15 p{
+	position: absolute;
+	top: 5em;
+	left: 1em;
+	color: black;
+	font-family: var(--font-style);
+	font-size: 1.1em;
+  }
+
+  .links2{
+	position: absolute;
+	top: 8.5em;
+	left: 7.5em;
+  }
+
+  .applewatch{
+	position: relative;
+	width: 100%;
+	height: 60vh;
+	overflow: hidden;
+  }
+  .applewatch img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  .iphones-introtext{
+	background-color: white;
+	position: absolute;
+	padding: 1em;
+	padding-bottom: 2em;
+	font-family: var(--font-style);
+	text-align: var(--text-positie-content);
+	font-size: var(--font-size-content);
+}
+
+.iphonepro-page{
+position: relative;
+	top: 5em;
+	background-color: black;
+	overflow: hidden; 
+}
+
+.iphonepro-page img{
+	height: 38.1em;
+}
+
+.iphonepro-page h2{
+  position: absolute;
+  top: 1.8em;
+  left: 3.2em;
+  color:var(--image-iphonepro-text);
+  font-family: var(--font-style);
+  font-weight: normal;
+  font-size: 2.5em;
+}
+
+.iphonepro-page a{
+	position: absolute;
+	top: 14em;
+	left: 8.5em;
+  }
+
+  .iphonepro-page p {
+	position: relative;
+	font-family: var(--font-style);
+	color:var(--image-iphonepro-text);
+	z-index: 1;
+  }
+  
+  .iphonepro-page button {
+	position:absolute;
+	font-size: 1em;
+	font-family: var(--font-style);
+	color: WHITE;
+	background-color: var(--links-color);
+	left: 9.8em;
+	top: 11em;
+	padding: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-radius: 2em;
+  }
+
+.iphonepro-page p:first-of-type {
+	font-size: 0.7em;
+     color: rgb(245,99,0,255);
+	 left: 16em;
+	 top: 2em;
+  }
+  
+  .iphonepro-page p:nth-child(2) {
+	font-size: 1.3em;
+	color:rgb(189,183,175,255);
+	left: 6.8em;
+	top: 1.2em;
+  }
+  
+  .iphonepro-page p:last-of-type{
+	top: 6.2em;
+	left: 9.3em;
+  }
+
+  .iphone15-page{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+  }
+  
+  .iphone15-page img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	
+  }
+
+  .iphone15-page h2{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 3em;
+	left: 3.5em;
+	color: black;
+	font-family: var(--font-style);
+	font-weight: normal;
+	font-size: 1em;
+	z-index: 1;
+  }
+
+  .iphone15-page p{
+	position: absolute;
+	top: 5em;
+	left: 1em;
+	color: black;
+	font-family: var(--font-style);
+	font-size: 1.1em;
+	z-index: 1;
+  }
+
+  .iphone15-page button{
+	z-index: 1;
+  }
+
+  .iphone15-page a{
+	z-index: 1;
+  }
+  .iphone-se{
+	padding: 2em;
+	font-family: var(--font-style);
+  }
+
+  .iphone-se h2{
+	position: absolute;
+	left: 6.4em;
+	font-weight: normal;
+
+  }
+  .iphone-se p{
+	position: absolute;
+	color:black;
+  }
+
+  .iphone-se p:first-of-type {
+	color: purple;
+	font-size: 2.3em;
+	left: 1em;
+	top: 40em;
+  }
+  
+  .iphone-se p:last-of-type{
+	color:green;
+	top: 99em;
+	left: 10.8em;
+  }
+
+  .iphone-se img{
+	margin-left: 1.5em;
+	width: 18em;
+	height: 100%;
+	margin-top: 15em;
+
+  }
+
+  .iphone-se button{
+	position: relative;
+	font-size: 1em;
+	font-family: var(--font-style);
+	color: WHITE;
+	background-color: var(--links-color);
+	padding: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-radius: 2em;
+	left: 9em;
+	top: 12em;
+  }
+
+.iphone-se a{
+	position: absolute;
+	top: 104.3em;
+	left: 9.5em;
+}
+
+  /* input CHATGPT: Hoe zorg ik ervoor dat een plaatje 
+  1392 x 368graag inzoomed in het midden zonder afgesneden te
+  worden */
+
+  @media only screen and (max-width: 414px) {
+	.applewatch {
+	  height: 60vh; /* Aspect ratio voor iPhone XR in portretmodus (812/375 * 100) */
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	.iphone15-page {
+	  height: 60vh; /* Aspect ratio voor iPhone XR in portretmodus (812/375 * 100) */
+	}
+}
+
+  @media only screen and (max-width: 375px) {
+	.products-scroller {
+	  grid-auto-columns: 100%; /* Stapel de items volledig op voor kleine schermen */
+	}
+  
+	.product-element {
+	  padding: 1em; /* Pas de padding aan voor kleinere schermen */
+	}
+}
+  
