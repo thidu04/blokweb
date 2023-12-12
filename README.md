@@ -40,11 +40,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Apple homepagina 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="./readme-images/ss-apple-pagina1" width="375px" 
+  alt="Apple homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Apple iPhone modellen pagina
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="./readme-images/ss-apple-pagina2" width="375px" alt="iPhone modellen pagina">
  
 </details>
 
@@ -57,6 +58,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  
+  Test 1 Screenreader:
+  De screenreader vertelt hardop wanneer iets een link is. Hij noemt vaak levels op en herhaalt soms dingen opnieuw. Visited me, images noemt hij hardop. De levels noemt hij op alsof het verschillende sections zijn. Hij noemt per section op hoeveel items het bevat. Verder noemt hij alles op een logische volgorde. 
 
 </details>
 
@@ -67,15 +71,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### de eerste pagina: 
+  <img src="./readme-images/breakdown-apple-1" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
+  ### de 2e pagina:
+  <img src="./readme-images/breakdown-apple-2" width="375px" alt="breakdown van de hele pagina">
 </details>
 
 
